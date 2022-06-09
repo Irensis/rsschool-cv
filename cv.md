@@ -4,7 +4,7 @@
 
 ## Contact information:
 
-### Phone: +37529878832
+### Phone: +375298788323
 
 ### E-mail: [irensurkont96@gmail.com] (irensurkont96@gmail.com)
 
