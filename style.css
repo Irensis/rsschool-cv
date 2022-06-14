@@ -1,6 +1,171 @@
-.h1 {
-    background-color: brown;
+html {
+  scroll-behavior: smooth; 
 }
-.h2 {
-    color: blueviolet;
+
+body {
+  background: url(./assets/img/fon.jpg);
+  font-family: 'Oxygen';
+  padding: 50px;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 15px;
+  padding: 5px;
+}
+
+@font-face {
+  font-family: Oxygen;
+   src: url("./assets/fonts/Oxygen-Light.ttf");
+ }
+
+.container {
+  width: 800px;
+  min-height: 800px;
+  border: 10px solid rgb(252, 252, 252);
+  margin: 0px auto;
+  background:rgb(252, 252, 252);
+}
+
+.header {
+  display: flex;
+  height:200px;
+}
+
+.title-block {
+  position: relative;
+  border: 2px solid rgb(255, 255, 255);
+  display: flex;
+  width: 80%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  background: url(./assets/img/fon1.jpg) no-repeat center center / cover;
+  color: #fff;
+  margin-right: 5px;
+}
+
+.title-block::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.5;
+}
+
+.title {
+  position: relative;
+  z-index: 1;
+}
+
+.userpic {
+  display: flex;
+  border: 2px solid rgb(212, 202, 202);
+}
+
+.nav ul {
+  display: flex;
+  background: #59a7b4;
+  margin: 10px 0;
+}
+
+.nav li a {
+  padding: 20px;
+  display: flex;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  border-right: 1px solid rgb(212, 202, 202);
+  transition: background .3s ease;
+}
+
+.nav li a:hover {
+  background: rgb(0, 0, 0);
+}
+
+.content-wraper {
+  display: flex;
+}
+
+.content {
+  width: 80%;
+  padding: 20px;
+}
+
+.content p{
+line-height: 25px;
+}
+
+.content a{
+  text-decoration: none;
+}
+
+.sidbar {
+  width: 20%;
+  margin-left: 120px;
+}
+
+.skills li {
+margin-left: 25px;
+}
+
+.skills li a{
+  text-decoration: none;
+}
+
+.skills li {
+padding: 10px 0;
+transition: transform.3s ease;
+cursor: pointer;
+}
+
+.skills li:hover {
+  transform: translateX(10px);
+}
+
+.education {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.column {
+  margin-left: -400px;
+  margin-top: 20px;
+  padding-left: 30px;
+  font-family: monospace;
+  font-size: 0.9rem;
+  background-color: #59a7b4;
+  color:rgb(255, 255, 255);
+}
+
+
+.footer {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-size: 0.8rem;
+  color: #585757;
+  background-color: var(--dark-gray-color);
+}
+
+.footer a {
+  text-decoration: none;
+  color: #585757;
+}
+
+.footer .github-icon {
+  margin-right: 10px;
+}
+
+.my-github {
+  display: flex;
+  align-items: center;
 }

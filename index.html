@@ -4,37 +4,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV HTML</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="/rsschool-cv/assets/img/favicon.ico">
+    <title>Rsschool-cv-html</title>
 </head>
 <body>
-    <div>
-        <h1>Iryna Surkant</h1>
-        <h2>Junior Frontend Developer</h2>
-        <h3>Contact information:</h3>
-        <h4>Phone: +375298788323</h4>
-        <h5>E-mail:<a href="irensurkont96@gmail.com">irensurkont96@gmail.com</a>
-        </h5>
-            <h2>About Me</h2>
-            <h3>I want to learn Front-End Development in RS School!</h3>
-            <h2>Skills</h2>
+    <div class="container">
+        <div class="header">
+        <div class="title-block">
+        <h1 class="title" style="position: relative;
+        z-index: 1;">Iryna Surkant <br>
+            Junior Frontend Developer
+        </h1>
+        </div>
+        <div class="userpic">
+            <img class="userpic" src="/rsschool-cv/assets/img/avatar.jpeg" alt="avatar">
+        </div>
+    </div>
+        <div class="nav">
             <ul>
+                <li><a href="#About-Me">About Me</a></li>
+                <li><a href="#About-Me">Education</a></li>
+                <li><a href="#About-Me">Courses</a></li>
+                <li><a href="#About-Me">Contacts</a></li>
+                <li><a href="#About-Me">Skills</a></li>
+                <li><a href="#Code">Languages</a></li>
+                <li><a href="#Code">Code</a></li>
+                <li><a href="#GitHub">GitHub</a></li>
+            </ul>
+        </div>
+        <div class="content-wraper">
+            <div class="content" id="About-Me">
+                <h2>About Me</h2>
+                <p>I want to learn Front-End Development in RS School! </p>
+                <p>It's always interesting to learn something new. I do frontend myself, using courses from the Internet, or video tutorials via YouTube. My perseverance and competent allocation of time helps to achieve success.</p>
+                <h2>Education</h2>
+                <p>Minsk Trade College of Belkoopsoyuz</p>
+                <ul>
+          <li>Commercial activity</li>
+          <li>Specialization: Commodity science of food and non-food products</li>
+          <li>2013 - 2015</li>
+        </ul>
+            <h2>Courses</h2>
+                <ul>
+                <li>HTML and CSS on ru.code-basic</li>
+                <li>RS Schools «JavaScript/Front-end. Stage 0»</li>
+                </ul>
+                <h2>Project</h2>
+                <p>Work with projects is underway...</p>
+                <a href="https://github.com/Irensis/rsschool-cv/tree/gh-pages"> github.com/Irensis/rsschool-cv/tree/gh-pages </a>
+        </div>
+        <div class="content" id="Contacts">
+        <div class="sidbar">
+            <h2>Contacts</h2>
+            <ul class="skills">
+                <li>Phone: +375298788323</li>
+                <li><a href="mailto:irensurkont96@gmail.com">irensurkont96@gmail.com</a></li>
+                <li>Discord: irensi(irensis)#5178</li>
+            </ul>
+            <h2>Skills</h2>
+            <ul class="skills">
                 <li>HTML</li>
                 <li>Git</li>
                 <li>CSS</li>
                 <li>JS</li>
+                <li>Adobe Photoshop</li>
+            </ul>
+            <h2>Languages</h2>
+            <ul class="skills">
+                <li>English A2</li>
+                <li>Russian Native</li>
             </ul>
         </div>
-        <div>
-        <p>Пример кода в Java</p>
+        <aside class="column" id="Code">
+            <h2>Code in Java</h2>
+            <h2>Calendar</h2>
         <code>
             private void updateTime() { <br>
-                Calendar cal = GregorianCalendar.getInstance();<br>
-                cal.setTime(new Date());<br>
-                mTvCurrentTime.setText(<br>
-                    String.format("d:d", cal.get(Calendar.HOUR_OF_DAY), cal.get(Calendar.MINUTE)));<br>
-                mHandler.sendEmptyMessageDelayed(MSG_UPDATE_TIME, 5000);<br>
-              }<br>
+            Calendar cal = GregorianCalendar.getInstance();<br>
+            cal.setTime(new Date());<br>
+            mTvCurrentTime.setText(<br>
+            String.format("d:d", cal.get(Calendar.HOUR_OF_DAY), cal.get(Calendar.MINUTE)));<br>
+            mHandler.sendEmptyMessageDelayed(MSG_UPDATE_TIME, 5000);<br>
+            }<br>
         </code>
+        </aside>
     </div>
+</div>
+    </div>
+        <div class="footer" id="GitHub">
+            <a class="my-github" href="https://github.com/irensis">
+              <img class="github-icon" src="./assets/img/git.png" alt="Github Icon" width="26" height="26">
+              <p>Visit my GitHub</p>
+            </a>
+            <a href="https://rs.school/js/">
+              <img src="/rsschool-cv/assets/img/RS.png" alt="Rsschool Icon" width="73" height="26">
+            </a>
+            <p>© 2022</p>
+          </div>
 </body>
 </html>
